@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo JavaScript - Document Object Model - DOM </title>
+</head>
+<body>
+    <h1>Exemplo JavaScript - Document Object Model - DOM</h1>
+    <h2>Exemplo calculadora de potências </h2>
+    <div>
+        <p>Informe a base da potência</p>
+  <p><input type="text" id="txtBase" size="5"></p>
+   <p>Informe o Expoente da potência</p>
+   <p><input type="text" id="txtExpoente" size="5"></p>
+   <p><button onclick="calcularPotencia()"> Calcular Potência</button></p>
+   <p id="txtResultado"> O resultado da potência calculada aparecerá aqui !!!</p>
+
+
+</div>
+<script>
+    function calcularPotencia(){
+        var base = parseInt(document.getElementById("txtBase").value);
+        var expoente = parseInt(document.getElementById("txtExpoente").value);
+        var resultado = 1;
+        for (var i=0;i<expoente;i++) {
+resultado=resultado*base 
+        }
+     document.getElementById("txtResultado").innerHTML="O resultado da potência é: " + resultado;
+    }
+</script>
+    
+</body>
+</html>
